@@ -1,0 +1,727 @@
+@media (max-width: 1600px) {
+  .header-bottom__content {
+    max-width: 70%;
+  }
+
+  .footer__left,
+  .footer__center {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1360px) {
+  .footer__center {
+    max-width: 541px;
+  }
+
+  .footer__btn {
+    padding: 19px 38px;
+  }
+
+  .footer__right {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  /*header---------------------------------------------------------*/
+  .header-top__logo.header-top__logo_center {
+    transform: translateX(-24px);
+  }
+
+  .header {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header-top {
+    padding: 26px 0;
+    margin-bottom: 39px;
+  }
+
+  .header-top__wrap {
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 41%;
+    min-height: 100vh;
+    opacity: 0;
+    z-index: 100;
+    background-color: var(--white);
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 32px 32px;
+    transform: translateX(-100%);
+    transition-property: opacity, transform, visibility;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    visibility: hidden;
+  }
+
+  .nav.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  ul.nav__list {
+    padding-top: 170px;
+    padding-left: 50px;
+    flex-direction: column;
+  }
+
+  .nav__item-link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .burger {
+    display: block;
+    z-index: 1;
+    /*transition: z-index 0.3s ease-in-out;*/
+  }
+
+  .burger.active {
+    z-index: 1000;
+  }
+
+  .burger.active>.burger__line {
+    transition: transform .3s ease-in-out, visibility .1s ease-in-out;
+  }
+
+  .burger.active>.burger__line:first-child {
+    visibility: hidden;
+  }
+
+  .burger.active>.burger__line:nth-child(2n) {
+    transform:rotate(45deg);
+  }
+
+  .burger.active>.burger__line:nth-child(3n) {
+    transform: rotate(-45deg);
+  }
+
+  .header-top__logo {
+    margin-right: 0;
+  }
+
+  .search__form {
+    width: 52%;
+  }
+
+  .search__input {
+    width: 84%;
+  }
+
+  .search__button {
+    margin-right: 15px;
+  }
+
+  /*header-bottom--------------------------------------------------------------------*/
+  .header-bottom {
+    margin-bottom: calc(35px / 2);
+  }
+
+  .header-bottom__wrap {
+    padding: 160px 77px 160px;
+  }
+
+  .header-bottom__content {
+    max-width: 100%;
+  }
+
+  .header-bottom__header {
+    margin-bottom: 16px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .header-bottom__text {
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .header-bottom__slide_bg1 {
+    background: transparent url("../img/header/photo-of-balconies_1024.webp") center / cover no-repeat;
+  }
+
+  .header-bottom__slide_bg2 {
+    background: transparent url("../img/header/cable-bridge-photo_1024.webp") center / cover no-repeat;
+  }
+
+  .header-bottom__slide_bg3 {
+    background: transparent url("../img/header/house-photo_1024.webp") center / cover no-repeat;
+  }
+
+  /*about--------------------------------------------------------*/
+  .about {
+    padding-top: calc(35px / 2);
+    padding-bottom: 40px;
+  }
+
+  .about__text {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .about__block-wrap {
+    flex-wrap: wrap;
+  }
+
+  .about__block {
+    width: 100%;
+  }
+
+  .about__block:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .about__block_left {
+    padding-top: 445px;
+  }
+
+  .about__item{
+    padding-left: 317px;
+  }
+
+  .about__item::before {
+    left: 77px;
+    top: 64px;
+  }
+
+  /*how ---------------------------------------------------------------------------------*/
+  .how {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .how__nav {
+    margin-bottom: 50px;
+  }
+
+  .how__btn-step:not(:last-child) {
+    margin-right: 81px;
+  }
+
+  .how__step * {
+    width: 49%;
+  }
+
+  .how__step-text {
+    margin-bottom: 23px;
+  }
+
+  .how__step::before {
+    width: 47%;
+    top: 11px;
+  }
+
+  /*faq----------------------------------------------------------------------------*/
+  .faq {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .faq__item-top-question {
+    max-width: 84%;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  /*footer-----------------------------------------------------------------------------*/
+  .footer__right {
+    display: none;
+  }
+}
+
+@media (max-width: 920px) {
+  /*header------------------------------------------*/
+  .header-top {
+    padding: 11px 0;
+  }
+
+  .nav {
+    width: 55%;
+  }
+
+  ul.nav__list {
+    padding-top: 152px;
+  }
+
+  .search__form {
+    top: 4px;
+    bottom: 4px;
+    width: 70%;
+  }
+  /*header-bottom---------------------------------------------*/
+  .header-bottom__wrap {
+    padding: 160px 40px;
+  }
+
+  .header-bottom__header {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .header-bottom__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .header-bottom__slide_bg1 {
+    background: transparent url("../img/header/photo-of-balconies_768.webp") center / cover no-repeat;
+  }
+
+  .header-bottom__slide_bg2 {
+    background: transparent url("../img/header/cable-bridge-photo_768.webp") center / cover no-repeat;
+  }
+
+  .header-bottom__slide_bg3 {
+    background: transparent url("../img/header/house-photo_768.webp") center / cover no-repeat;
+  }
+
+  /*about----------------------------------------------------------*/
+  .about__text {
+    margin-bottom: 55px;
+  }
+
+  .about__block-content {
+    padding: 34px 40px;
+  }
+
+  .about__block-text {
+    max-width: 65%;
+  }
+
+  .about__block_left {
+    padding-top: 454px;
+  }
+
+  .about__item {
+    padding: 35px 40px 35px 170px;
+  }
+
+  .about__item::before {
+    left: 2px;
+    top: 35px;
+    background-size: 59%;
+  }
+
+  /*how-------------------------------------------------------------*/
+  .how {
+    padding-bottom: 25px;
+  }
+
+  .how__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .how__btn-step:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .how__step * {
+    width: 100%;
+  }
+
+  .how__step {
+    padding-top: 322px;
+  }
+
+  .how__step::before {
+    width: 100%;
+    top: 0;
+    bottom: 65%;
+  }
+
+  /*faq ---------------------------------------------------------------*/
+  .faq {
+    padding-top: 24px;
+    padding-bottom: 111px;
+  }
+
+  .faq__item-top-question {
+    max-width: 92%;
+  }
+
+  /*footer----------------------------------------*/
+  .footer__wrap {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+
+  .footer__center {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 638px) {
+  .how__step {
+    padding-top: 345px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .btn {
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .section-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  /*header-------------------------------------------------------*/
+  .header-top {
+    padding: 17px 0;
+    margin-bottom: 30px;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  ul.nav__list {
+    padding-top: 78px;
+    padding-left: 15px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .nav__item-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .search__form {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 20px;
+    z-index: 10;
+    border-radius: 0 0 24px 24px;
+
+  }
+
+  /*header-bottom------------------------------------------------------*/
+  .header-bottom {
+    margin-bottom: 30px;
+  }
+  .header-bottom__wrap {
+    padding: 60px 22px;
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .header-bottom__header {
+    margin-bottom: 7px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .header-bottom__text {
+    margin-bottom: 34px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .header-bottom__btn {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .header-bottom__slide {
+    border-radius: 16px;
+  }
+
+  .header-bottom__swiper > .header-bottom__pagination.swiper-pagination{
+    bottom: 15px;
+  }
+
+  .header-bottom__pagination .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+  }
+
+  .header-bottom__slide_bg1 {
+    background: transparent url("../img/header/photo-of-balconies_320.webp") center / cover no-repeat;
+  }
+
+  .header-bottom__slide_bg2 {
+    background: transparent url("../img/header/cable-bridge-photo_320.webp") center / cover no-repeat;
+  }
+
+  .header-bottom__slide_bg3 {
+    background: transparent url("../img/header/house-photo_320.webp") center / cover no-repeat;
+  }
+
+  /*about-------------------------------------------*/
+  .about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about__text {
+    margin-bottom: 14px;
+  }
+
+  .about__block-wrap {
+    border-radius: 16px;
+  }
+
+  .about__block-content {
+    padding: 34px 0;
+    background: none;
+  }
+
+  .about__block:not(:last-child) {
+    margin-bottom: 29px;
+  }
+
+  .about__block_left {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .about__block-content {
+    position: relative;
+    padding-top: 208px;
+    padding-bottom: 0;
+
+  }
+
+  .about__block-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    background: transparent url("../img/about/worker_320.webp") center / cover no-repeat;
+    border-radius: 16px;
+  }
+
+  .about__block-text {
+    max-width: 100%;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: inherit;
+  }
+
+  .about__btn {
+    padding: 12px 44px;
+    font-size: 12px;
+    line-height: 15px;
+    border-width: 2px;
+    color: var(--orange);
+  }
+
+  .about__item {
+    padding: 60px 0 0 0;
+    outline: none;
+  }
+
+  .about__item_bg1::before {
+    background-image: url('../img/about/sfer-box_320.svg');
+  }
+
+  .about__item::before {
+    left: 0;
+    top: 0;
+    width: 64px;
+    height: 49px;
+    background-size: 100%;
+  }
+
+  .about__item-title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about__item-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+/*how-----------------------------------------------------------*/
+  .how {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  .how__title {
+    margin-bottom: 20px;
+  }
+
+  .how__nav {
+    margin-bottom: 16px;
+  }
+
+  .how__step {
+    padding-top: 176px;
+  }
+
+  .how__btn-step {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .how__step::before {
+    min-height: 160px;
+    border-radius: 16px;
+    bottom: 84%;
+  }
+
+  .how__step-title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .how__step-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .how__btn-wrap {
+    justify-content: space-between;
+  }
+
+  .how__btn:not(:last-child) {
+    margin: 0;
+  }
+
+  .how__btn {
+    padding: 14px 44px;
+  }
+
+  .how__btn_empty {
+    padding: 12px 32px;
+  }
+
+  /*faq---------------------------------------------------------*/
+  .faq {
+    padding-top: 28px;
+    padding-bottom: 60px;
+  }
+
+  .faq-title {
+    margin-bottom: 16px;
+  }
+
+  .faq__item-top-question {
+    max-width: 89%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .faq__item-top-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .faq__item-bottom-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  /*footer---------------------------------------------------*/
+  .footer {
+    padding-top: 33px;
+  }
+  .footer__title {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px
+  }
+
+  .footer__center {
+    margin-bottom: 16px;
+  }
+
+  .footer__form {
+    border-bottom: 1px solid #414141;
+  }
+
+  .form__input {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+
+  .form__label:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .footer__btn-wrap {
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__btn {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .footer__social-link svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__logo {
+    margin-bottom: 16px;
+  }
+
+  .footer__social-link:not(:last-child) {
+    margin-right: 16px;
+  }
+}
